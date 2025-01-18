@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - For Darshitha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <h2>Login</h2> <!-- Changed to "Login" -->
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="submit-btn">Log In</button>
+      </form>
+      <p id="error-message" class="error-message"></p>
+    </div>
+  </div>
+
+  <!-- Main Content (hidden until login) -->
+  <div id="mainContent" class="hidden">
+    <header>
+      <div class="header-content">
+        <h1 class="animated-text">Dear Darshitha,</h1>
+        <p class="subtitle animated-text">A place made with love for you!</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="message">
+      <h2 class="animated-text">A Few Words</h2>
+      <p>
+        Even though we've never spoken, there's something special about you that inspires me. This website is my way of expressing my admiration and respect.
+      </p>
+      <button class="cta-button">Learn More</button>
+    </section>
+
+    <footer>
+      <p>Created with care by someone who admires you. 💖</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
